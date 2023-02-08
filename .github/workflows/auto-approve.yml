@@ -6,8 +6,8 @@ jobs:
   auto-approve:
     runs-on: ubuntu-latest
     steps:
-      - uses: hmarr/auto-approve-action@v3
+      - uses: hmarr/auto-approve-action@v3.1.0
         with:
-          github.token: ${{ secrets.AdvProg }}
+          github-token: ${{ secrets.AdvProg }}
 #           token: ${{ secrets.CSUET_KEY }}
 #           workflows: "action.yml"
