@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: hmarr/auto-approve-action@v3
         with:
-#           github-token: ${{ secrets.AdvProg }}
-          token: ${{ secrets.CSUET_KEY }}
+          github-token: ${{ secrets.AdvProg }}
+#           token: ${{ secrets.CSUET_KEY }}
 #           workflows: "action.yml"
