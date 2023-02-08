@@ -10,4 +10,5 @@ jobs:
     steps:
       - uses: hmarr/auto-approve-action@v3
         with:
+          github-token: ${{ secrets.AdvProg }}
           review-message: "Auto approved automated PR"
