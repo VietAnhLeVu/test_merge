@@ -10,7 +10,8 @@ jobs:
         uses: mheap/automatic-approve-action@v1
         with:
           token: ${{ secrets.CSUET_KEY }}
+          workflows: "action.yml"
 #           github-token: ${{ secrets.AdvProg }} # lỗi key
 #           token: ${{ secrets.AdvProg }} # Error: Input required and not supplied: token
-#           workflows: "action.yml"
+          
 #           dangerous_files: "mainTest.cpp"
