@@ -9,7 +9,8 @@ jobs:
       - name: Automatic Approve
         uses: mheap/automatic-approve-action@v1
         with:
-          github-token: ${{ secrets.AdvProg }}
-#           token: ${{ secrets.AdvProg }}
+          token: ${{ secrets.CSUET_KEY }}
+#           github-token: ${{ secrets.AdvProg }} # lỗi key
+#           token: ${{ secrets.AdvProg }} # Error: Input required and not supplied: token
 #           workflows: "action.yml"
 #           dangerous_files: "mainTest.cpp"
