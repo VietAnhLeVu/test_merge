@@ -1,11 +1,14 @@
-name: Auto approve
-
+name: Automatic Approve
 on: pull_request_target
 
 jobs:
-  auto-approve:
+  automatic-approve:
+    name: Automatic Approve
     runs-on: ubuntu-latest
     steps:
-      - uses: hmarr/auto-approve-action@v3
+      - name: Automatic Approve
+        uses: mheap/automatic-approve-action@v1
         with:
-          github-token: ${{ secrets.CSUET_KEY }}
+          token: ${{ secrets.AdvProg }}
+          workflows: "action.yml"
+          dangerous_files: "mainTest.cpp"
