@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: hmarr/auto-approve-action@v3
         with:
-          github-token: ${{ secrets.CS }}
+          github-token: ${{ secrets.AdvProg }}
