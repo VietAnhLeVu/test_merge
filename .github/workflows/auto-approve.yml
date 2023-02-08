@@ -9,6 +9,7 @@ jobs:
       - name: Automatic Approve
         uses: mheap/automatic-approve-action@v1
         with:
-          token: ${{ secrets.AdvProg }}
-          workflows: "action.yml"
-          dangerous_files: "mainTest.cpp"
+          github-token: ${{ secrets.AdvProg }}
+#           token: ${{ secrets.AdvProg }}
+#           workflows: "action.yml"
+#           dangerous_files: "mainTest.cpp"
